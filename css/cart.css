@@ -1,0 +1,17 @@
+body {
+    padding-top:40px;
+    font-family: "Source Code Pro", Monaco, monospace;
+}
+
+.product .name {
+    padding:10px;
+}
+
+.product {
+    margin-top:10px;
+    border-bottom: 1px dashed black;
+    padding:10px;
+}
+
+
+
