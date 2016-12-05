@@ -3,6 +3,10 @@ body {
     font-family: "Source Code Pro", Monaco, monospace;
 }
 
+#shop {
+    margin-top:20px;
+}
+
 .product .name {
     padding:10px;
 }
@@ -13,5 +17,6 @@ body {
     padding:10px;
 }
 
-
-
+.product:last-of-type {
+    border: 0;
+}

@@ -36,7 +36,7 @@ Vue.component('product', {
 })
 
 new Vue({
-    el: '#cart',
+    el: '#shop',
     data: {
         store: {
           products: []

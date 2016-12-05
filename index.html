@@ -9,18 +9,24 @@
 </head>
 <body>
     <div class="container">
-        <h1>Hello Fruits</h1>
+        <h1>Vue Cart</h1>
 
-        <div id="cart">
-            <h2>Products</h2>
-            <div v-for="product in store.products" class="product">
-                <product :name="product.name" :price="product.price" @add="addProduct(product)" @remove="removeProduct(product)"></product>
+        <hr>
+
+        <div id="shop">
+            <div id="store">
+                <h2>The Store</h2>
+                <div v-for="product in store.products" class="product">
+                    <product :name="product.name" :price="product.price" @add="addProduct(product)" @remove="removeProduct(product)"></product>
+                </div>
             </div>
 
             <hr>
 
-            <span>Total Quantity:</span> <span> {{ cart.quantity_total }}</span>
-            <span>Total:</span> <span> ${{ cart.price_total }}</span>
+            <div id="cart">
+                <span>Total Quantity:</span> <span> {{ cart.quantity_total }}</span>
+                <span>Total:</span> <span> ${{ cart.price_total }}</span>
+            </div>
 
             <hr>
 
